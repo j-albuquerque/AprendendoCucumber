@@ -16,7 +16,7 @@ end
 
 #Verifica se a página de resultato tem o título do dado
 #pesquisado + " - Pesquisa Google"
-Então (/^o titulo da página deve ser "(.*)"$/) do |titlepage| 
+Entao (/^o titulo da página deve ser "(.*)"$/) do |titlepage| 
     titulo = @browser.title
     expect(titulo).to eq(titlepage)
 end
