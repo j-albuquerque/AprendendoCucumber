@@ -1,6 +1,7 @@
 # language: pt
 
 Funcionalidade: Aprendendo a usar o Cucumber com Ruby no UOL
+    Começando a usar Cucumber
 
 Cenario: Pesquisar Queijo
     Dado que eu acesse o "http://www.google.com.br"
