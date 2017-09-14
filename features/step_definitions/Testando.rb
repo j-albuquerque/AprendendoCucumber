@@ -1,22 +1,21 @@
 require 'selenium-webdriver'
 require 'rspec/expectations'
 
-#@pesq = "Queijo"
-#@titlepage = @pesq+" - Pesquisa Google"
-
+#Inicia o navegador e acessa página de pesquisa do Google
 Dado (/^que eu acesse o "(.*)"$/) do |url|
     @browser = Selenium::WebDriver.for :chrome
     @browser.get url
 end
 
-#When (/^pesquisar Queijo$/) do
+#Insere um dado no campo de busca e realiza a busca
 Quando (/^pesquisar "(.*)"$/) do |pesquisa| 
     element = @browser.find_element :name => "q"
     element.send_keys(pesquisa)
     element.send_keys :enter
 end
 
-#Then (/^o titulo da página deve ser Queijo - Pesquisa Google$/) do 
+#Verifica se a página de resultato tem o título do dado
+#pesquisado + " - Pesquisa Google"
 Então (/^o titulo da página deve ser "(.*)"$/) do |titlepage| 
     titulo = @browser.title
     expect(titulo).to eq(titlepage)
