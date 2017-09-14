@@ -1,8 +1,6 @@
 # language: pt
 
 Funcionalidade: Aprendendo a usar o Cucumber com Ruby no UOL
-     Fazendo testes e praticando o uso do cucumber com o ruby 
-     nas páginas UOL
 
 Cenario: Pesquisar Queijo
     Dado que eu acesse o "http://www.google.com.br"
