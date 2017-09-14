@@ -1,7 +1,7 @@
 # language: pt
 
-Funcionalidade: Aprendendo a usar o Cucumber com Ruby no UOL
-    Começando a usar Cucumber
+Funcionalidade: Aprendendo a usar o Cucumber com Ruby
+    Acesso a páginas do google para realizar pesquisa
 
 Cenario: Pesquisar Queijo
     Dado que eu acesse o "http://www.google.com.br"
