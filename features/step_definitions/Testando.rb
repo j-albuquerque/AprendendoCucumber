@@ -74,3 +74,22 @@ Entao (/^deve exibir uma mensagem de enviado ao enviar o e-mail$/) do
     @browser.find_element(:css, ".editable").send_keys [:control, :enter]
     
 end
+
+
+
+=begin
+Quando(/^ativar o hover do menu "(.*)"$/) do |menu|
+    @browser.link(:text, menu).hover
+    find(:css, 'a[title="Voltar ao topo"]').hover
+    sleep 2
+end
+Então(/^viasualizo o header com a opção$/) do #|option|
+    #element = @browser.li(:text, option)
+    #element.click
+    #expect(element).to eq.(option)
+    #element = page.find('a', :text => option)
+    find('li', :text => "Assine").hover
+    sleep 2
+    Capybara.current_session.driver.quit 
+end
+=end
